@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+.landing-bg {
+  background: url("https://res.cloudinary.com/djyawllgy/image/upload/v1719400699/desktopmenu_onwb7f.png")
+    no-repeat center center/cover;
+  height: 100vh;
+}
+
+.main-section {
+  font-family: "Times New Roman", Times, serif;
+  padding: 50px 20px;
+  color: white;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-section h1 {
+  font-size: 36px;
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+.highlight {
+  color: black;
+}
+
+.signup-button {
+  background-color: #a0deff;
+  color: #1c1678;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.signup-button:hover {
+  background-color: #e5533d;
+}
+@media (max-width: 768px) {
+  .main-section h1 {
+    font-size: 28px;
+  }
+
+  .signup-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-bg {
+    background-image: url("https://res.cloudinary.com/djyawllgy/image/upload/v1719400498/mobilemenucard_t1tysb.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .main-section h1 {
+    font-size: 24px;
+  }
+
+  .signup-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

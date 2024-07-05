@@ -1,0 +1,58 @@
+.app-container {
+  padding: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.active {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #033b5d;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.inactive {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #033b5d;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+.inactive:hover {
+  background-color: #0056b3;
+}
+.orders-menu-logout-btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.button-group button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .button-group {
+    flex-direction: column;
+  }
+
+  .button-group button {
+    margin: 10px 0;
+  }
+}

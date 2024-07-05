@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-center {
+  font-size: 24px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.owner-login-btn {
+  padding: 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.owner-login-btn:hover {
+  background-color: #218838;
+}
+.menu-card-parent {
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid red; */
+  margin-right: 0px;
+}
+.menu-card-menu {
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 20px; /* Adjusted padding to account for the fixed navbar */
+}
+
+.menu-item-menu {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-details {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  max-width: 800px;
+  height: 100px;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.place-order-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.place-order-btn:hover {
+  background-color: #218838;
+}
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.failure-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: red;
+  text-align: center;
+}
+.failure-msg {
+  color: green;
+}
+.table-number-input {
+  width: calc(66% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+/* index.css */
+
+/* Existing styles... */
+
+/* index.css */
+
+/* Specific styles for success message */
+.success-message {
+  position: fixed; /* Keep it fixed on the screen */
+  top: 250px; /* Stick to the top */
+  left: 50%; /* Start from the left */
+  transform: translateX(-50%);
+  padding: 20px; /* Padding around the message */
+  border-bottom: 2px solid #d6e9c6; /* Border color for success */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensure it's on top of other elements */
+  background-color: #dff0d8; /* Light green background for success */
+  color: #3c763d; /* Dark green text */
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center the text and button */
+  align-items: center; /* Center content vertically */
+  border-radius: 5px;
+  min-width: 300px;
+}
+
+.success-message p {
+  margin: 0; /* Remove default margin */
+  font-size: 18px; /* Font size for the message */
+  flex-grow: 1; /* Let the paragraph take up available space */
+  text-align: center; /* Center text */
+}
+
+.success-message button {
+  background-color: transparent; /* Transparent background */
+  border: none; /* No border */
+  color: inherit; /* Inherit text color */
+  font-size: 18px; /* Font size for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 0 20px; /* Padding for better click area */
+}
+
+.success-message button:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Specific styles for table error message */
+.table-message {
+  transform: translateX(-50%);
+  position: fixed; /* Keep it fixed on the screen */
+  top: 250px; /* Stick to the top */
+  left: 50%; /* Start from the left */
+  padding: 30px; /* Padding around the message */
+  border-bottom: 2px solid #ebccd1; /* Border color for error */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensure it's on top of other elements */
+  background-color: #f2dede; /* Light red background for error */
+  color: #a94442; /* Dark red text */
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center the text and button */
+  align-items: center; /* Center content vertically */
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 300px;
+}
+
+.table-message p {
+  margin: 0; /* Remove default margin */
+  font-size: 18px; /* Font size for the message */
+  flex-grow: 1; /* Let the paragraph take up available space */
+  text-align: center; /* Center text */
+}
+
+.table-message button {
+  background-color: transparent; /* Transparent background */
+  border: none; /* No border */
+  color: inherit; /* Inherit text color */
+  font-size: 18px; /* Font size for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 0 20px; /* Padding for better click area */
+}
+
+.table-message button:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Specific styles for menu item error message */
+.menu-message {
+  position: fixed; /* Keep it fixed on the screen */
+  top: 250px; /* Stick to the top */
+  left: 50%; /* Start from the left */
+  transform: translateX(-50%);
+  padding: 20px; /* Padding around the message */
+  border-bottom: 2px solid #faebcc; /* Border color for warning */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensure it's on top of other elements */
+  background-color: #fcf8e3; /* Light yellow background for warning */
+  color: #8a6d3b; /* Dark yellow text */
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center the text and button */
+  align-items: center; /* Center content vertically */
+  border-radius: 5px;
+  min-width: 300px;
+}
+
+.menu-message p {
+  margin: 0; /* Remove default margin */
+  font-size: 18px; /* Font size for the message */
+  flex-grow: 1; /* Let the paragraph take up available space */
+  text-align: center; /* Center text */
+}
+
+.menu-message button {
+  background-color: transparent; /* Transparent background */
+  border: none; /* No border */
+  color: inherit; /* Inherit text color */
+  font-size: 18px; /* Font size for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 0 20px; /* Padding for better click area */
+}
+
+.menu-message button:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Additional styles... */
+
+@media (max-width: 768px) {
+  .menu-card-item-price {
+    text-align: center;
+  }
+  .menu-item-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-details {
+    padding: 10px 0;
+  }
+
+  .quantity-control {
+    margin-top: 10px;
+  }
+  .menu-card-menu {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  textarea {
+    width: 100%;
+  }
+}

@@ -1,0 +1,131 @@
+.sign-in-success-bg {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.signin-nav {
+  width: 100%;
+}
+
+.form-success {
+  font-family: "Times New Roman", Times, serif;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 65px;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 30px;
+  width: 90%;
+  height: auto;
+}
+
+.form-success-label {
+  font-family: Bree Serif;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.form-success-input {
+  width: 90%;
+  outline: none;
+  background-color: white;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.input-containers {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sign-in-button {
+  color: white;
+  font-family: Bree serif;
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
+  min-width: 100px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.sign-up {
+  font-family: Bree serif;
+  color: blue;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.forgot-text {
+  color: blue;
+  cursor: pointer;
+}
+
+.signin-error {
+  color: red;
+}
+
+.show-password-icon-signin {
+  font-size: 30px;
+  margin-right: 10px;
+  color: blue;
+}
+
+.password-show-parent-signin {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 576px) {
+  .form-success-label {
+    font-size: 20px;
+  }
+  .form-success-input {
+    padding: 12px;
+  }
+
+  .form-success-input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .sign-in-button {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .form-success {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sign-in-button {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .form-success-input {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #071952;
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.logo-name {
+  background: url("https://res.cloudinary.com/djyawllgy/image/upload/v1719383472/menucard_qji0vz.png");
+  background-size: cover;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Times New Roman", Times, serif;
+  background-repeat: none;
+}
+.signin-button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.signin-button:hover {
+  background-color: #ddd;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 5px 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+}

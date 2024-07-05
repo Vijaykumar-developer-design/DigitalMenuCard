@@ -1,0 +1,123 @@
+.menu-item-manager {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.input-group button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #218838;
+}
+
+.image-preview {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: auto;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-details {
+  flex: 1;
+  padding: 0 20px;
+}
+.loader-container-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+}
+.failure-parent-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  color: red;
+  text-align: center;
+}
+.failure-msg {
+  color: green;
+}
+.remove-item-btn {
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px 20px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+.empty-menu {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+@media (max-width: 600px) {
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu-item-price {
+    text-align: center;
+  }
+  .item-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .item-details {
+    padding: 0;
+  }
+}

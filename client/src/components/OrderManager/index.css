@@ -1,0 +1,86 @@
+.order-manager {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.order-completed {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+.completed-text {
+  text-decoration: line-through;
+}
+.order-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.order-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+
+.order-item button:hover {
+  background-color: #218838;
+}
+
+.order-item button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.totalBill {
+  font-weight: bold;
+}
+.completed-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+.remove-order-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+.no-orders-text {
+  font-family: "Times New Roman", Times, serif;
+}
+@media (max-width: 600px) {
+  .order-item {
+    padding: 10px;
+  }
+
+  .order-item button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .remove-order-btn {
+    margin-left: 0px;
+  }
+  .order-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
